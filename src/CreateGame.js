@@ -61,7 +61,11 @@ export function CreateGame({ dispatch, closeModalHandler }) {
               ))}
             </div>
             <footer className="modal-footer">
-              <button className="main-button" onClick={createGameHandler}>
+              <button
+                className="main-button"
+                onClick={createGameHandler}
+                disabled={!inputArray.length > 0}
+              >
                 Start game
               </button>
             </footer>

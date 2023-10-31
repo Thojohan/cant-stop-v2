@@ -313,8 +313,8 @@ h4 {
   box-shadow: 3px 3px 3px inset rgb(83, 80, 80);
 }
 
-.round-button,
-.main-button:active {
+.round-button:enabled:active,
+.main-button:enabled:active {
   transform: scale(1.05);
 }
 
