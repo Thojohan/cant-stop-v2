@@ -199,7 +199,6 @@ export default function App() {
   }, [handledArray, playerArray, gameStatus]);
 
   function closeModalHandler(e) {
-    console.log(e);
     if (
       e.key === "Escape" ||
       e.target.className.includes("dialog-wrapper") ||

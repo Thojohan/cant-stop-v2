@@ -21,14 +21,6 @@ export function DiceResultSorter(
       (+moves.at(el.First - 2) - 1 === +commitDice[+el.First] ||
         +moves.at(el.First - 2) - 1 === +selected[+el.First]);
 
-    console.log(el.First);
-    console.log(+selected[+el.First]);
-    console.log(+commitDice[+el.First]);
-    console.log(+moves.at(el.First - 2));
-
-    console.log(isOnlyOneStepLeft);
-    console.log(commitDice);
-
     function possibleDice() {
       if (sorted.length < 1) return "d";
       if (

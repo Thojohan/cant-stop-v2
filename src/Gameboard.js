@@ -20,7 +20,6 @@ export function Gameboard({ commitDice, playerArray }) {
   const commitedArray = Object.keys(commitDice).map((el) => ({
     [+el]: +commitDice[+el],
   }));
-  console.log(commitDice, playerArray);
 
   const mixArray =
     [
@@ -33,8 +32,6 @@ export function Gameboard({ commitDice, playerArray }) {
       }),
       [null, commitedArray],
     ] || [];
-
-  console.log("hei");
 
   return (
     <section className="gameboard-container">
