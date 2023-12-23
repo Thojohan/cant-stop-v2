@@ -40,7 +40,6 @@ export function DiceResultSorter(
     }
 
     const renderCode = possibleDice();
-    console.log(renderCode);
 
     return {
       renderCode: renderCode,
